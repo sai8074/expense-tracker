@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<header>
+  <h1>💸 Expense Tracker</h1>
+  <p id="month"></p>
+</header>
+
+<main>
+
+  <!-- ADD EXPENSE -->
+  <section class="card">
+    <h2>Add Expense</h2>
+    <input type="number" id="amount" placeholder="Amount ₹">
+    <select id="category">
+      <option>Food</option>
+      <option>Travel</option>
+      <option>Shopping</option>
+      <option>Bills</option>
+      <option>Entertainment</option>
+      <option>Others</option>
+    </select>
+    <input type="text" id="note" placeholder="Note (optional)">
+    <button onclick="addExpense()">+ Add</button>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="card highlight">
+    <h2>Monthly Insights</h2>
+    <p class="big" id="total">₹0</p>
+    <p id="topCategory"></p>
+  </section>
+
+  <!-- CHARTS -->
+  <section class="card">
+    <h2>Category Split</h2>
+    <canvas id="pieChart"></canvas>
+  </section>
+
+  <section class="card">
+    <h2>Spending Trend</h2>
+    <canvas id="lineChart"></canvas>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+</body>
+</html>

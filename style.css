@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont;
+    background: #0f172a;
+    color: #e5e7eb;
+  }
+  
+  header {
+    padding: 1.2rem;
+    text-align: center;
+    background: linear-gradient(135deg,#020617,#020617);
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  #month {
+    opacity: 0.7;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .card {
+    background: #020617;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+  }
+  
+  .highlight {
+    text-align: center;
+  }
+  
+  .big {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    background: #020617;
+    color: white;
+  }
+  
+  button {
+    margin-top: 0.8rem;
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 14px;
+    border: none;
+    background: #22c55e;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
